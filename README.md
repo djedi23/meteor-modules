@@ -10,15 +10,15 @@ In your templates, create a pointcut:
 
 In your modules, register the hooks:
 
-	modules.push('toolbarActions', 20, custom01Action);
-	modules.push('toolbarActions', 10, custom02Action);
+	modules.push('toolbarActions', 20, 'custom01ActionTemplate');
+	modules.push('toolbarActions', 10, 'custom02ActionTemplate');
 
 
 List all the elements of the ordered list as an array:
 
 	modules.list('toolbarActions')
 
-returns [custom02Action, custom01Action]
+returns ['custom02ActionTemplate', 'custom01ActionTemplate']
 
 
 ### Helpers Hook
