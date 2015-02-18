@@ -1,0 +1,4 @@
+<!-- Run all the hooks in the current context -->
+<template name="runHooks">
+{{#each templates}}{{> Template.dynamic template=this data=../..}}{{/each}}
+</template>
