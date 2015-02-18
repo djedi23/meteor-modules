@@ -7,8 +7,8 @@ Package.describe({
 Package.onUse(function(api){
 
     api.use([
-        'blaze'
-        ,'templating'
+        'blaze@2.0.3'
+        ,'templating@1.0.9'
     ], 'client');
 
     api.addFiles(['modules.js'],
@@ -27,7 +27,7 @@ Package.onTest(function (api) {
     // Allows you to use the 'tinytest' framework
     api.use(['tinytest@1.0.0'],['client','server']);
     // Sets up a dependency on this package
-    api.use(['mkp-modules'], ['client','server']);
+    api.use(['djedi:modules'], ['client','server']);
     api.use([
         'blaze'
     ], 'client');
